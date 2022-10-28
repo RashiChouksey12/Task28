@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +8,7 @@
 }
 
 body {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    font-family: 'Open Sans', sans-serif;}
 
 .container {
     max-width: 1200px;
@@ -130,7 +132,7 @@ figure.login-img {
     text-transform: uppercase;
     color: #161c2e;
     font-weight: 700;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
 }
 
 .logo h2 span {
@@ -144,7 +146,7 @@ figure.login-img {
 .right-section input {
     padding: 18px 0 15px 25px;
     width: 248px;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border: 2px solid #d2d4d2;
     border-bottom: none;
 }
@@ -153,8 +155,7 @@ figure.login-img {
     font-size: 13px;
     color: #111111;
     font-weight: 400;
-    font-family: "Open Sans";
-}
+    font-family: 'Open Sans', sans-serif;}
 
 .shopping-cart {
     display: flex;
@@ -257,7 +258,7 @@ main h1 {
     text-transform: uppercase;
     color: #232323;
     font-weight: 700;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
 }
 
 main p {
@@ -310,7 +311,7 @@ main button {
     line-height: 33px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
     text-align: center;
 }
 
@@ -320,12 +321,10 @@ main button {
     line-height: 20px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Open Sans";
     text-align: center;
     margin: 0 auto;
     margin-top: 31px;
 }
-
 .right-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -335,9 +334,9 @@ main button {
 }
 
 .right-box {
-    padding: 39px 26px;
+    /* padding: 39px 26px; */
     /* opacity: 0.200; */
-    width: 169px;
+   /* height: 191px; */
     background-color: #ffffff;
     border: 1px solid rgb(156, 156, 156, 0.200);
     width: 18.40%;
@@ -345,14 +344,22 @@ main button {
 
 .right-box:last-child {
     background-color: #2f2d41;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    line-height: none;
 }
-
-.forma {
+.right-box .forma {
     text-align: center;
+    padding: 39px 28px;
 }
-
+.forma:nth-of-type(4)
+{
+    padding: 39px 0 !important;
+}
 .forma img {
-    width: 50px;
+    width: auto;
+    /* height: 88px; */
 
 }
 
@@ -362,7 +369,6 @@ main button {
     text-transform: uppercase;
     color: #a28178;
     font-weight: 700;
-    font-family: "Open Sans";
     padding-top: 20px;
 }
 
@@ -376,7 +382,7 @@ main button {
     text-align: center;
 
     margin: 0 auto;
-    padding: 55px 10px 50px 10px;
+    /* padding: 55px 10px 50px 10px; */
 }
 
 /* most-populer */
@@ -392,7 +398,9 @@ main button {
     line-height: 54px;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
 }
 
 .most-populer h1 {
@@ -400,7 +408,7 @@ main button {
     line-height: 54px;
     color: #ffffff;
     font-weight: 400;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
 }
 
 .most-populer-cards {
@@ -429,7 +437,9 @@ main button {
     line-height: 54px;
     color: #000;
     font-weight: 700;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
 }
 
 .new-arrivals h2 {
@@ -437,7 +447,7 @@ main button {
     line-height: 54px;
     color: #000;
     font-weight: 400;
-    font-family: "Roboto Slab";
+    font-family: 'Roboto Slab', serif;
     padding: 103px 0 298px 0px;
 
 }
@@ -464,7 +474,6 @@ main button {
     line-height: 20px;
     color: #3b3b3b;
     font-weight: 400;
-    font-family: "Open Sans";
     text-align: center;
     margin: 0 auto;
 }
@@ -495,8 +504,8 @@ footer {
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
-    font-family: "Roboto Slab";
-    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    padding: 33px 0 26px 0;
 }
 
 .footer-content div {
@@ -509,22 +518,41 @@ footer {
     line-height: 22px;
     color: #b6b6b6;
     font-weight: 400;
-    font-family: "Oxygen";
-}
+    font-family: 'Oxygen', sans-serif;}
 
 .typography ul li a {
     font-size: 14px;
     line-height: 26px;
     color: #b6b6b6;
     font-weight: 400;
-    font-family: "Oxygen";
-}
+    font-family: 'Oxygen', sans-serif;}
 
 .social-media-icons {
+  
+}
+.social-media-icons ul
+{
     display: flex;
-    gap: 6px;
+    gap: 20px;
+    list-style: none;
 }
 
+.social-media-icons ul li{
+    border: 1px solid #aeaeae;
+    width: 35px;
+    height: 35px;
+
+}
+.social-media-icons ul li:nth-last-of-type(1 ){
+  border-bottom: none;
+}
+.social-media-icons ul li:nth-last-of-type(2){
+    border-bottom: none;
+  }
+.social-media-icons ul li i{
+    color: #afafaf;
+    padding: 8px 9px;
+}
 .fb {
     border: 1px solid red;
     width: 35px;
@@ -544,6 +572,9 @@ footer {
     line-height: 22px;
     color: #f8f8f8;
     font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+;
+
 
 }
 
